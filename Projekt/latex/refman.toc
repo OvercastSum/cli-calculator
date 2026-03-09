@@ -1,0 +1,63 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{\numberline {1}Indeks klas}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lista klas}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Indeks plików}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lista plików}{2}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Dokumentacja klas}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Dokumentacja struktury Arguments}{3}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Opis szczegółowy}{3}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Dokumentacja struktury Variable}{3}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Opis szczegółowy}{4}{subsection.3.2.1}%
+\contentsline {chapter}{\numberline {4}Dokumentacja plików}{5}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dokumentacja pliku command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}line.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{5}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Opis szczegółowy}{6}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Dokumentacja funkcji}{6}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}howToUse()}{6}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}isNumber()}{6}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}parseCommand()}{6}{subsubsection.4.1.2.3}%
+\contentsline {subsubsection}{\numberline {4.1.2.4}showErrorText()}{7}{subsubsection.4.1.2.4}%
+\contentsline {section}{\numberline {4.2}Dokumentacja pliku command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}line.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{7}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Opis szczegółowy}{8}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Dokumentacja funkcji}{8}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}parseCommand()}{8}{subsubsection.4.2.2.1}%
+\contentsline {section}{\numberline {4.3}command\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}line.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{8}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Dokumentacja pliku data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}processing.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{8}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Opis szczegółowy}{10}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dokumentacja funkcji}{10}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}allowedCharacter()}{10}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}anyToDecimal()}{10}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}anyToDecimalConversion()}{11}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}Calc()}{11}{subsubsection.4.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.4.2.5}cutZeros()}{12}{subsubsection.4.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.4.2.6}decimalToAny()}{12}{subsubsection.4.4.2.6}%
+\contentsline {subsubsection}{\numberline {4.4.2.7}normalize()}{12}{subsubsection.4.4.2.7}%
+\contentsline {subsubsection}{\numberline {4.4.2.8}ONPCalc()}{13}{subsubsection.4.4.2.8}%
+\contentsline {subsubsection}{\numberline {4.4.2.9}ONPConversion()}{13}{subsubsection.4.4.2.9}%
+\contentsline {subsubsection}{\numberline {4.4.2.10}operations()}{14}{subsubsection.4.4.2.10}%
+\contentsline {subsubsection}{\numberline {4.4.2.11}parser()}{14}{subsubsection.4.4.2.11}%
+\contentsline {subsubsection}{\numberline {4.4.2.12}tokenize()}{14}{subsubsection.4.4.2.12}%
+\contentsline {subsubsection}{\numberline {4.4.2.13}validate()}{15}{subsubsection.4.4.2.13}%
+\contentsline {subsubsection}{\numberline {4.4.2.14}validateOperators()}{15}{subsubsection.4.4.2.14}%
+\contentsline {subsubsection}{\numberline {4.4.2.15}validateParentheses()}{15}{subsubsection.4.4.2.15}%
+\contentsline {subsubsection}{\numberline {4.4.2.16}validateVariableName()}{16}{subsubsection.4.4.2.16}%
+\contentsline {section}{\numberline {4.5}Dokumentacja pliku data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}processing.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{16}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Opis szczegółowy}{17}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Dokumentacja funkcji}{17}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}Calc()}{17}{subsubsection.4.5.2.1}%
+\contentsline {section}{\numberline {4.6}data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}processing.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{18}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Dokumentacja pliku file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handling.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{18}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Opis szczegółowy}{18}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Dokumentacja funkcji}{18}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}readFile()}{18}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}writeFile()}{19}{subsubsection.4.7.2.2}%
+\contentsline {section}{\numberline {4.8}Dokumentacja pliku file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handling.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{19}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Opis szczegółowy}{20}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Dokumentacja funkcji}{20}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}readFile()}{20}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}writeFile()}{20}{subsubsection.4.8.2.2}%
+\contentsline {section}{\numberline {4.9}file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handling.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{21}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Dokumentacja pliku main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{21}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Opis szczegółowy}{21}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Dokumentacja funkcji}{22}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}main()}{22}{subsubsection.4.10.2.1}%

@@ -1,0 +1,132 @@
+\begin{theindex}
+
+  \item {allowedCharacter}
+    \subitem {data\_processing.cpp}, \hyperpage{12}
+  \item {anyToDecimal}
+    \subitem {data\_processing.cpp}, \hyperpage{12}
+  \item {anyToDecimalConversion}
+    \subitem {data\_processing.cpp}, \hyperpage{13}
+  \item {Arguments}, \hyperpage{5}
+
+  \indexspace
+
+  \item {Calc}
+    \subitem {data\_processing.cpp}, \hyperpage{13}
+    \subitem {data\_processing.h}, \hyperpage{20}
+  \item {command\_line.cpp}, \hyperpage{7}
+    \subitem {howToUse}, \hyperpage{8}
+    \subitem {isNumber}, \hyperpage{8}
+    \subitem {parseCommand}, \hyperpage{8}
+    \subitem {showErrorText}, \hyperpage{9}
+  \item {command\_line.h}, \hyperpage{9}
+    \subitem {parseCommand}, \hyperpage{10}
+  \item {cutZeros}
+    \subitem {data\_processing.cpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {data\_processing.cpp}, \hyperpage{11}
+    \subitem {allowedCharacter}, \hyperpage{12}
+    \subitem {anyToDecimal}, \hyperpage{12}
+    \subitem {anyToDecimalConversion}, \hyperpage{13}
+    \subitem {Calc}, \hyperpage{13}
+    \subitem {cutZeros}, \hyperpage{14}
+    \subitem {decimalToAny}, \hyperpage{14}
+    \subitem {normalize}, \hyperpage{15}
+    \subitem {ONPCalc}, \hyperpage{15}
+    \subitem {ONPConversion}, \hyperpage{15}
+    \subitem {operations}, \hyperpage{16}
+    \subitem {parser}, \hyperpage{16}
+    \subitem {tokenize}, \hyperpage{17}
+    \subitem {validate}, \hyperpage{17}
+    \subitem {validateOperators}, \hyperpage{17}
+    \subitem {validateParentheses}, \hyperpage{18}
+    \subitem {validateVariableName}, \hyperpage{18}
+  \item {data\_processing.h}, \hyperpage{19}
+    \subitem {Calc}, \hyperpage{20}
+  \item {decimalToAny}
+    \subitem {data\_processing.cpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {file\_handling.cpp}, \hyperpage{21}
+    \subitem {readFile}, \hyperpage{21}
+    \subitem {writeFile}, \hyperpage{22}
+  \item {file\_handling.h}, \hyperpage{22}
+    \subitem {readFile}, \hyperpage{23}
+    \subitem {writeFile}, \hyperpage{23}
+
+  \indexspace
+
+  \item {howToUse}
+    \subitem {command\_line.cpp}, \hyperpage{8}
+
+  \indexspace
+
+  \item {isNumber}
+    \subitem {command\_line.cpp}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{25}
+  \item {main.cpp}, \hyperpage{24}
+    \subitem {main}, \hyperpage{25}
+
+  \indexspace
+
+  \item {normalize}
+    \subitem {data\_processing.cpp}, \hyperpage{15}
+
+  \indexspace
+
+  \item {ONPCalc}
+    \subitem {data\_processing.cpp}, \hyperpage{15}
+  \item {ONPConversion}
+    \subitem {data\_processing.cpp}, \hyperpage{15}
+  \item {operations}
+    \subitem {data\_processing.cpp}, \hyperpage{16}
+
+  \indexspace
+
+  \item {parseCommand}
+    \subitem {command\_line.cpp}, \hyperpage{8}
+    \subitem {command\_line.h}, \hyperpage{10}
+  \item {parser}
+    \subitem {data\_processing.cpp}, \hyperpage{16}
+
+  \indexspace
+
+  \item {readFile}
+    \subitem {file\_handling.cpp}, \hyperpage{21}
+    \subitem {file\_handling.h}, \hyperpage{23}
+
+  \indexspace
+
+  \item {showErrorText}
+    \subitem {command\_line.cpp}, \hyperpage{9}
+
+  \indexspace
+
+  \item {tokenize}
+    \subitem {data\_processing.cpp}, \hyperpage{17}
+
+  \indexspace
+
+  \item {validate}
+    \subitem {data\_processing.cpp}, \hyperpage{17}
+  \item {validateOperators}
+    \subitem {data\_processing.cpp}, \hyperpage{17}
+  \item {validateParentheses}
+    \subitem {data\_processing.cpp}, \hyperpage{18}
+  \item {validateVariableName}
+    \subitem {data\_processing.cpp}, \hyperpage{18}
+  \item {Variable}, \hyperpage{5}
+
+  \indexspace
+
+  \item {writeFile}
+    \subitem {file\_handling.cpp}, \hyperpage{22}
+    \subitem {file\_handling.h}, \hyperpage{23}
+
+\end{theindex}

@@ -1,0 +1,58 @@
+\doxysection{Dokumentacja pliku main.\+cpp}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Główny plik programu.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include "{}command\+\_\+line.\+h"{}}\newline
+{\ttfamily \#include "{}file\+\_\+handling.\+h"{}}\newline
+{\ttfamily \#include "{}data\+\_\+processing.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Główny punkt wejścia do programu (entry point). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Główny plik programu. 
+
+\begin{DoxyAuthor}{Autor}
+Karol Radziszewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+2026 
+\end{DoxyDate}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Główny punkt wejścia do programu (entry point). 
+
+
+\begin{DoxyItemize}
+\item Funkcja pełni rolę koordynatora, integrując moduły obsługi wiersza poleceń, operacji na plikach oraz silnika obliczeniowego. Steruje przepływem danych\+: pobiera argumenty, wczytuje równania, przetwarza je sekwencyjnie (zachowując stan zmiennych między liniami) i zapisuje wyniki. Zawiera również globalny blok try-\/catch do obsługi błędów.
+\item 
+\begin{DoxyParams}{Parametry}
+{\em argc} & Liczba argumentów wywołania programu. \\
+\hline
+{\em argv} & Tablica wskaźników na argumenty (ciągi znaków). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+int Kod zakończenia programu\+: 0 w przypadku sukcesu, 1 w przypadku wystąpienia błędu. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}

@@ -1,0 +1,86 @@
+/**
+ * @file main.cpp
+ * @brief Główny plik programu
+ * @author Karol Radziszewski
+ * @date 2026
+ */
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <unordered_map>
+#include "command_line.h"
+#include "file_handling.h"
+#include "data_processing.h"
+
+/**
+ * @brief Główny punkt wejścia do programu (entry point).
+ * * Funkcja pełni rolę koordynatora, integrując moduły obsługi wiersza poleceń,
+ * operacji na plikach oraz silnika obliczeniowego.
+ * Steruje przepływem danych: pobiera argumenty, wczytuje równania,
+ * przetwarza je sekwencyjnie (zachowując stan zmiennych między liniami)
+ * i zapisuje wyniki. Zawiera również globalny blok try-catch do obsługi błędów.
+ * * @param argc Liczba argumentów wywołania programu.
+ * @param argv Tablica wskaźników na argumenty (ciągi znaków).
+ * @return int Kod zakończenia programu: 0 w przypadku sukcesu, 1 w przypadku wystąpienia błędu.
+ */
+int main(int argc, char *argv[])
+{
+	auto args = parseCommand(argc, argv);
+
+	if (!args.has_value())
+	{
+		return 1;
+	}
+
+	Arguments args_content = *args;
+	auto fileContent = readFile(args_content.input_file);
+	if (!fileContent || !args.has_value())
+	{
+		return 1;
+	}
+
+	std::unordered_map<std::string, double> values;
+	std::vector<std::pair<std::string, std::string>> results;
+
+	try
+	{
+		int input_base = std::stoi(args_content.input_num_system);
+		int output_base = std::stoi(args_content.output_num_system);
+
+		for (const std::string &element : *fileContent)
+		{
+			auto result = Calc(element, values, input_base, output_base);
+
+			if (result.has_value())
+			{
+				Variable var = result.value();
+				values[var.variable_name] = var.variable_value;
+				results.push_back({var.variable_name, var.variable_value_str});
+			}
+			else
+			{
+				return 1;
+			}
+		}
+	}
+	catch (const std::out_of_range &error)
+	{
+		std::cout << error.what() << std::endl;
+		return 1;
+	}
+	catch (const std::invalid_argument &error)
+	{
+		std::cout << error.what() << std::endl;
+		return 1;
+	}
+	catch (const std::runtime_error &error)
+	{
+		std::cerr << error.what() << std::endl;
+		return 1;
+	}
+
+	writeFile(args_content.output_file, results);
+
+	return 0;
+}

@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kalkulator PPK: Dokumentacja pliku data_processing.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Kalkulator PPK
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('data__processing_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku data_processing.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Główny plik obliczeniowy (implementacja logiki matematycznej).  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;regex&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;stack&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVariable.html">Variable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura reprezentująca wynik obliczeń przypisany do konkretnej zmiennej.  <a href="structVariable.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a4712830fcc46db6aed9cbe000ee1f53b" id="r_a4712830fcc46db6aed9cbe000ee1f53b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a4712830fcc46db6aed9cbe000ee1f53b">tokenize</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a4712830fcc46db6aed9cbe000ee1f53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rozbija ciąg znaków na pojedyncze tokeny matematyczne.  <br /></td></tr>
+<tr class="separator:a4712830fcc46db6aed9cbe000ee1f53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a11fda2d89ac09f088d1048c952f461" id="r_a4a11fda2d89ac09f088d1048c952f461"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a4a11fda2d89ac09f088d1048c952f461">validateOperators</a> (const std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
+<tr class="memdesc:a4a11fda2d89ac09f088d1048c952f461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy operatory są poprawnie rozmieszczone.  <br /></td></tr>
+<tr class="separator:a4a11fda2d89ac09f088d1048c952f461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593e78e03db19865dae4cb6d7a397ab6" id="r_a593e78e03db19865dae4cb6d7a397ab6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a593e78e03db19865dae4cb6d7a397ab6">validateParentheses</a> (const std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
+<tr class="memdesc:a593e78e03db19865dae4cb6d7a397ab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weryfikuje poprawność nawiasów w wyrażeniu.  <br /></td></tr>
+<tr class="separator:a593e78e03db19865dae4cb6d7a397ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f7d8e625910a204935df4a3599db70" id="r_a20f7d8e625910a204935df4a3599db70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a20f7d8e625910a204935df4a3599db70">allowedCharacter</a> (const std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
+<tr class="memdesc:a20f7d8e625910a204935df4a3599db70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upewnia się, że tokeny zawierają tylko dozwolone znaki.  <br /></td></tr>
+<tr class="separator:a20f7d8e625910a204935df4a3599db70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b65f3b82cebc5821b676e6071c914a" id="r_a34b65f3b82cebc5821b676e6071c914a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a34b65f3b82cebc5821b676e6071c914a">validateVariableName</a> (const std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
+<tr class="memdesc:a34b65f3b82cebc5821b676e6071c914a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza poprawność struktury przypisania do zmiennej.  <br /></td></tr>
+<tr class="separator:a34b65f3b82cebc5821b676e6071c914a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6ae57f14e8bb7acf17bc4a9ad91f05" id="r_aea6ae57f14e8bb7acf17bc4a9ad91f05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#aea6ae57f14e8bb7acf17bc4a9ad91f05">validate</a> (const std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
+<tr class="memdesc:aea6ae57f14e8bb7acf17bc4a9ad91f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agreguje wszystkie testy walidacyjne.  <br /></td></tr>
+<tr class="separator:aea6ae57f14e8bb7acf17bc4a9ad91f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0df47a9847fa16694f506918d09fede" id="r_aa0df47a9847fa16694f506918d09fede"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#aa0df47a9847fa16694f506918d09fede">normalize</a> (std::vector&lt; std::string &gt; &amp;tokens)</td></tr>
+<tr class="memdesc:aa0df47a9847fa16694f506918d09fede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizuje format wyrażenia.  <br /></td></tr>
+<tr class="separator:aa0df47a9847fa16694f506918d09fede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2213b7a9f1f470eff8a26360642fed06" id="r_a2213b7a9f1f470eff8a26360642fed06"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a2213b7a9f1f470eff8a26360642fed06">parser</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a2213b7a9f1f470eff8a26360642fed06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parsuje tekst wejściowy, wykonując tokenizację i normalizację.  <br /></td></tr>
+<tr class="separator:a2213b7a9f1f470eff8a26360642fed06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f6f1533113b487afc1c5efb020239b" id="r_a18f6f1533113b487afc1c5efb020239b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a18f6f1533113b487afc1c5efb020239b">ONPConversion</a> (const std::string &amp;input)</td></tr>
+<tr class="memdesc:a18f6f1533113b487afc1c5efb020239b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konwertuje wyrażenie na Odwrotną Notację Polską (ONP).  <br /></td></tr>
+<tr class="separator:a18f6f1533113b487afc1c5efb020239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4823e52f5d9e3f87b6bc1bbffb3a14" id="r_a0f4823e52f5d9e3f87b6bc1bbffb3a14"><td class="memItemLeft" align="right" valign="top"><a id="a0f4823e52f5d9e3f87b6bc1bbffb3a14" name="a0f4823e52f5d9e3f87b6bc1bbffb3a14"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>charToDigit</b> (char c)</td></tr>
+<tr class="memdesc:a0f4823e52f5d9e3f87b6bc1bbffb3a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pomocnicza funkcja konwertująca znak na cyfrę. Obsługuje cyfry 0-9 oraz litery A-Z (dla systemów o podstawie &gt; 10). <br /></td></tr>
+<tr class="separator:a0f4823e52f5d9e3f87b6bc1bbffb3a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b8c6f7028010b69ffdbc84d4ff45d5" id="r_af9b8c6f7028010b69ffdbc84d4ff45d5"><td class="memItemLeft" align="right" valign="top"><a id="af9b8c6f7028010b69ffdbc84d4ff45d5" name="af9b8c6f7028010b69ffdbc84d4ff45d5"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>digitToChar</b> (int digit)</td></tr>
+<tr class="memdesc:af9b8c6f7028010b69ffdbc84d4ff45d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pomocnicza funkcja konwertująca cyfrę na znak. Odwrotność charToDigit. <br /></td></tr>
+<tr class="separator:af9b8c6f7028010b69ffdbc84d4ff45d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea1c24998d3aa5c75f573703aaea93a" id="r_a8ea1c24998d3aa5c75f573703aaea93a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a8ea1c24998d3aa5c75f573703aaea93a">anyToDecimal</a> (const std::string &amp;number, int base)</td></tr>
+<tr class="memdesc:a8ea1c24998d3aa5c75f573703aaea93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konwertuje liczbę zapisaną jako tekst w dowolnym systemie na system dziesiętny.  <br /></td></tr>
+<tr class="separator:a8ea1c24998d3aa5c75f573703aaea93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20fd77c36ef2279d8bdaa4e35e21016" id="r_ab20fd77c36ef2279d8bdaa4e35e21016"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#ab20fd77c36ef2279d8bdaa4e35e21016">decimalToAny</a> (double number, int base)</td></tr>
+<tr class="memdesc:ab20fd77c36ef2279d8bdaa4e35e21016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konwertuje liczbę dziesiętną (double) na tekst w docelowym systemie liczbowym.  <br /></td></tr>
+<tr class="separator:ab20fd77c36ef2279d8bdaa4e35e21016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32600353635b8076f414acf5af73cea5" id="r_a32600353635b8076f414acf5af73cea5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a32600353635b8076f414acf5af73cea5">anyToDecimalConversion</a> (const std::vector&lt; std::string &gt; &amp;onp_equation, const int &amp;base)</td></tr>
+<tr class="memdesc:a32600353635b8076f414acf5af73cea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przechodzi przez wektor ONP i konwertuje wszystkie liczby na system dziesiętny.  <br /></td></tr>
+<tr class="separator:a32600353635b8076f414acf5af73cea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c8012d1cd964cc8cbaa2946866a885" id="r_a39c8012d1cd964cc8cbaa2946866a885"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a39c8012d1cd964cc8cbaa2946866a885">operations</a> (const double &amp;number_a, const double &amp;number_b, const std::string &amp;symbol)</td></tr>
+<tr class="memdesc:a39c8012d1cd964cc8cbaa2946866a885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wykonuje pojedynczą operację arytmetyczną.  <br /></td></tr>
+<tr class="separator:a39c8012d1cd964cc8cbaa2946866a885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac755be1142293bccc6dd115887452920" id="r_ac755be1142293bccc6dd115887452920"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#ac755be1142293bccc6dd115887452920">ONPCalc</a> (const std::vector&lt; std::string &gt; &amp;input, std::unordered_map&lt; std::string, double &gt; &amp;values)</td></tr>
+<tr class="memdesc:ac755be1142293bccc6dd115887452920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oblicza wartość wyrażenia zapisanego w ONP.  <br /></td></tr>
+<tr class="separator:ac755be1142293bccc6dd115887452920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b708ac29f6fd107b54c77d35eee8fb" id="r_a03b708ac29f6fd107b54c77d35eee8fb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a03b708ac29f6fd107b54c77d35eee8fb">cutZeros</a> (const std::string &amp;number)</td></tr>
+<tr class="memdesc:a03b708ac29f6fd107b54c77d35eee8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usuwa zbędne zera końcowe oraz ewentualną kropkę dziesiętną.  <br /></td></tr>
+<tr class="separator:a03b708ac29f6fd107b54c77d35eee8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573bd696f605e339405691b574450942" id="r_a573bd696f605e339405691b574450942"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structVariable.html">Variable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="data__processing_8cpp.html#a573bd696f605e339405691b574450942">Calc</a> (const std::string &amp;input, std::unordered_map&lt; std::string, double &gt; &amp;values, const int &amp;base_input, const int &amp;base_output)</td></tr>
+<tr class="memdesc:a573bd696f605e339405691b574450942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główna funkcja kalkulatora. Przetwarza równanie, zamienia systemy liczbowe i wykonuje obliczenia.  <br /></td></tr>
+<tr class="separator:a573bd696f605e339405691b574450942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Główny plik obliczeniowy (implementacja logiki matematycznej). </p>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a20f7d8e625910a204935df4a3599db70" name="a20f7d8e625910a204935df4a3599db70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f7d8e625910a204935df4a3599db70">&#9670;&#160;</a></span>allowedCharacter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool allowedCharacter </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tokens</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Upewnia się, że tokeny zawierają tylko dozwolone znaki. </p>
+<ul>
+<li>Waliduje format liczb (w tym ułamków), operatorów oraz nazw zmiennych.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tokens</td><td>Lista tokenów. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeśli wszystkie znaki są dozwolone. </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>Jeśli napotkano nieznany symbol. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a8ea1c24998d3aa5c75f573703aaea93a" name="a8ea1c24998d3aa5c75f573703aaea93a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea1c24998d3aa5c75f573703aaea93a">&#9670;&#160;</a></span>anyToDecimal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string anyToDecimal </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konwertuje liczbę zapisaną jako tekst w dowolnym systemie na system dziesiętny. </p>
+<ul>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>Liczba w formie tekstu (np. "1A"). </td></tr>
+    <tr><td class="paramname">base</td><td>Podstawa systemu liczbowego (2-36). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::string Wynik jako tekst reprezentujący liczbę dziesiętną. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a32600353635b8076f414acf5af73cea5" name="a32600353635b8076f414acf5af73cea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32600353635b8076f414acf5af73cea5">&#9670;&#160;</a></span>anyToDecimalConversion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; anyToDecimalConversion </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>onp_equation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Przechodzi przez wektor ONP i konwertuje wszystkie liczby na system dziesiętny. </p>
+<ul>
+<li>Jest to krok niezbędny przed wykonaniem obliczeń, ponieważ logika matematyczna operuje na typie double (system dziesiętny).</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">onp_equation</td><td>Wektor tokenów w ONP. </td></tr>
+    <tr><td class="paramname">base</td><td>Podstawa systemu, w jakim zapisane są liczby w tokenach. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::vector&lt;std::string&gt; Wektor tokenów z liczbami dziesiętnymi. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a573bd696f605e339405691b574450942" name="a573bd696f605e339405691b574450942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573bd696f605e339405691b574450942">&#9670;&#160;</a></span>Calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structVariable.html">Variable</a> &gt; Calc </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>base_input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>base_output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Główna funkcja kalkulatora. Przetwarza równanie, zamienia systemy liczbowe i wykonuje obliczenia. </p>
+<ul>
+<li>Funkcja przyjmuje równanie w formie tekstu, parsuje je, konwertuje na Odwrotną Notację Polską (ONP), a następnie oblicza wynik, uwzględniając podane wartości zmiennych. Obsługuje również konwersję systemów liczbowych na wejściu i wyjściu.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Równanie matematyczne do obliczenia w formie ciągu znaków. </td></tr>
+    <tr><td class="paramname">values</td><td>Mapa zawierająca wartości zmiennych (klucz to nazwa zmiennej, np. "$M1"). </td></tr>
+    <tr><td class="paramname">base_input</td><td>Podstawa systemu liczbowego, w którym zapisane są liczby w równaniu (np. 10, 16). </td></tr>
+    <tr><td class="paramname">base_output</td><td>Podstawa systemu liczbowego, w którym ma zostać zwrócony wynik. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::optional&lt;Variable&gt; Obiekt zawierający wynik obliczeń lub std::nullopt, jeśli wystąpił błąd parsowania. </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>W przypadku błędów matematycznych (np. dzielenie przez zero) lub błędów składni. </td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td>Gdy podana zmienna nie istnieje w mapie values. </td></tr>
+    <tr><td class="paramname">std::out_of_range</td><td>Gdy podstawa systemu liczbowego jest nieprawidłowa. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a03b708ac29f6fd107b54c77d35eee8fb" name="a03b708ac29f6fd107b54c77d35eee8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b708ac29f6fd107b54c77d35eee8fb">&#9670;&#160;</a></span>cutZeros()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string cutZeros </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Usuwa zbędne zera końcowe oraz ewentualną kropkę dziesiętną. </p>
+<ul>
+<li>Funkcja służy do poprawy estetyki wyświetlania liczb zmiennoprzecinkowych. Redukuje ciągi typu "2.500000" do "2.5", a liczby całkowite zapisane z kropką (np. "12.000000") skracane są do formy całkowitej ("12").</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>Liczba w formacie tekstowym (zazwyczaj wynik std::to_string). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::string Liczba bez nadmiarowych zer i kropki na końcu. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ab20fd77c36ef2279d8bdaa4e35e21016" name="ab20fd77c36ef2279d8bdaa4e35e21016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab20fd77c36ef2279d8bdaa4e35e21016">&#9670;&#160;</a></span>decimalToAny()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string decimalToAny </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konwertuje liczbę dziesiętną (double) na tekst w docelowym systemie liczbowym. </p>
+<ul>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>Liczba dziesiętna. </td></tr>
+    <tr><td class="paramname">base</td><td>Docelowa podstawa systemu (2-36). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::string Reprezentacja liczby w nowym systemie. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aa0df47a9847fa16694f506918d09fede" name="aa0df47a9847fa16694f506918d09fede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0df47a9847fa16694f506918d09fede">&#9670;&#160;</a></span>normalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; normalize </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tokens</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Normalizuje format wyrażenia. </p>
+<ul>
+<li>Zamienia przecinki na kropki w liczbach oraz wstawia domyślne znaki mnożenia (np. przed nawiasami), aby ułatwić późniejsze parsowanie.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tokens</td><td>Referencja do wektora tokenów (modyfikowana w miejscu). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::vector&lt;std::string&gt; Znormalizowany wektor tokenów. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="ac755be1142293bccc6dd115887452920" name="ac755be1142293bccc6dd115887452920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac755be1142293bccc6dd115887452920">&#9670;&#160;</a></span>ONPCalc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ONPCalc </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; std::string, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Oblicza wartość wyrażenia zapisanego w ONP. </p>
+<ul>
+<li>Przechodzi przez tokeny, odkładając liczby na stos i zdejmując je w momencie napotkania operatora. Podstawia też wartości zmiennych z mapy.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Wektor tokenów ONP. </td></tr>
+    <tr><td class="paramname">values</td><td>Mapa zmiennych. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>double Wynik obliczeń. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a18f6f1533113b487afc1c5efb020239b" name="a18f6f1533113b487afc1c5efb020239b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f6f1533113b487afc1c5efb020239b">&#9670;&#160;</a></span>ONPConversion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::vector&lt; std::string &gt; &gt; ONPConversion </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konwertuje wyrażenie na Odwrotną Notację Polską (ONP). </p>
+<ul>
+<li>Wykorzystuje algorytm Shunting-yard do uporządkowania operatorów i operandów zgodnie z kolejnością wykonywania działań.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Równanie w formie tekstu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::optional&lt;std::vector&lt;std::string&gt;&gt; Wyrażenie w formacie ONP lub std::nullopt w razie błędu. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a39c8012d1cd964cc8cbaa2946866a885" name="a39c8012d1cd964cc8cbaa2946866a885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39c8012d1cd964cc8cbaa2946866a885">&#9670;&#160;</a></span>operations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double operations </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>number_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>number_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>symbol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wykonuje pojedynczą operację arytmetyczną. </p>
+<ul>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number_a</td><td>Pierwszy operand. </td></tr>
+    <tr><td class="paramname">number_b</td><td>Drugi operand. </td></tr>
+    <tr><td class="paramname">symbol</td><td>Operator działania (+, -, *, /, ^). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>double Wynik działania. </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>W przypadku błędu (np. dzielenie przez zero). </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a2213b7a9f1f470eff8a26360642fed06" name="a2213b7a9f1f470eff8a26360642fed06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2213b7a9f1f470eff8a26360642fed06">&#9670;&#160;</a></span>parser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::vector&lt; std::string &gt; &gt; parser </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parsuje tekst wejściowy, wykonując tokenizację i normalizację. </p>
+<ul>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Surowy tekst równania. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::optional&lt;std::vector&lt;std::string&gt;&gt; Wektor przygotowanych tokenów lub std::nullopt w przypadku błędu walidacji. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a4712830fcc46db6aed9cbe000ee1f53b" name="a4712830fcc46db6aed9cbe000ee1f53b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4712830fcc46db6aed9cbe000ee1f53b">&#9670;&#160;</a></span>tokenize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; tokenize </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rozbija ciąg znaków na pojedyncze tokeny matematyczne. </p>
+<ul>
+<li>Dzieli tekst na liczby, operatory i zmienne. Dodatkowo wykrywa i obsługuje "minus unarny" (np. w wyrażeniu "-5"), łącząc go z liczbą, zamiast traktować jako odejmowanie.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Surowy tekst równania. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>std::vector&lt;std::string&gt; Lista tokenów gotowa do dalszego przetwarzania. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="aea6ae57f14e8bb7acf17bc4a9ad91f05" name="aea6ae57f14e8bb7acf17bc4a9ad91f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6ae57f14e8bb7acf17bc4a9ad91f05">&#9670;&#160;</a></span>validate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool validate </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tokens</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Agreguje wszystkie testy walidacyjne. </p>
+<ul>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tokens</td><td>Lista tokenów. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeśli wyrażenie przeszło wszystkie testy pomyślnie. </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a4a11fda2d89ac09f088d1048c952f461" name="a4a11fda2d89ac09f088d1048c952f461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a11fda2d89ac09f088d1048c952f461">&#9670;&#160;</a></span>validateOperators()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool validateOperators </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tokens</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy operatory są poprawnie rozmieszczone. </p>
+<ul>
+<li>Wykrywa błędy takie jak dwa operatory obok siebie (np. "++") lub wyrażenie składające się z samego operatora.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tokens</td><td>Lista tokenów do sprawdzenia. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeśli operatory są poprawne (lub rzuca wyjątek). </dd>
+<dd>
+false Jeśli wyrażenie jest trywialnie błędne (np. sam operator). </dd></dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a593e78e03db19865dae4cb6d7a397ab6" name="a593e78e03db19865dae4cb6d7a397ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593e78e03db19865dae4cb6d7a397ab6">&#9670;&#160;</a></span>validateParentheses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool validateParentheses </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tokens</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Weryfikuje poprawność nawiasów w wyrażeniu. </p>
+<ul>
+<li>Sprawdza, czy każdy nawias otwierający ma parę oraz czy bilans nawiasów nie schodzi poniżej zera w trakcie analizy.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tokens</td><td>Lista tokenów. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeśli nawiasy są poprawne. </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>Jeśli bilans nawiasów jest nieprawidłowy. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a id="a34b65f3b82cebc5821b676e6071c914a" name="a34b65f3b82cebc5821b676e6071c914a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34b65f3b82cebc5821b676e6071c914a">&#9670;&#160;</a></span>validateVariableName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool validateVariableName </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tokens</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza poprawność struktury przypisania do zmiennej. </p>
+<ul>
+<li>Wymaga, aby wyrażenie zaczynało się od poprawnej nazwy zmiennej ($M...) i znaku równości.</li>
+<li><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tokens</td><td>Lista tokenów. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true Jeśli struktura jest poprawna. </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>Jeśli brak zmiennej lub znaku równości na początku. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="data__processing_8cpp.html">data_processing.cpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
