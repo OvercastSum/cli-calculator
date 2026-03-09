@@ -8,11 +8,20 @@ Reads mathematical expressions from input files and writes results to output fil
 - Variables
 - Base conversion (e.g. decimal to binary)
 
+## Compilation
+
+### Visual Studio
+
+### g++
+```bash
+g++ -std=c++17 *.cpp -o calculator
+```
+
 ## Usage
 
 ### Example command
 ```bash
-calculator -i input.txt -o output.txt -s 10 -S 10
+calculator -i ../examples/input.txt -o ../examples/output.txt -s 10 -S 10
 ```
 ### Input file format
 Variable start with `$M` followed by a number:
