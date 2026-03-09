@@ -6,7 +6,7 @@ Reads mathematical expressions from input files and writes results to output fil
 ## Features
 - Addition, subtraction, multiplication, division, power
 - Variables
-- Works on files
+- Base conversion (e.g. decimal to binary)
 
 ## Usage
 
