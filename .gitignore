@@ -1,8 +1,10 @@
 .vs/
-*.user
-*.suo
 x64/
-Debug/
-Release/
+*.exe
 *.obj
 *.pdb
+*.user
+*.suo
+Debug/
+Release/
+output.txt
